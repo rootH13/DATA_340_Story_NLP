@@ -1,0 +1,42 @@
+pip install replicate
+
+export REPLICATE_API_TOKEN=<paste-your-token-here>
+
+import replicate
+
+output = replicate.run(
+  "meta/llama-2-7b-chat:13c3cdee13ee059ab779f0291d29054dab00a47dad8261375654de5540165fb0",
+  input={
+    "debug": False,
+    "top_k": -1,
+    "top_p": 0.95,
+    "prompt": "Write a romance story with sentences about 32 words long, some use of passive voice, and easy to understand dialogue between characters. Use older vocabulary style words. Use the words 'one', 'would', 'mr', 'could', 'little', 'said', 'like', 'man', 'must', and 'know'. The story should have a slightly positive tone to it. Use older vocabulary. ",
+    "temperature": 0.7,
+    "system_prompt": "Intake NLP instructions, and generate a text story based on the instructions provided. DO NOT repeat the instructions in your output under any circumstances!",
+    "max_new_tokens": 800,
+    "min_new_tokens": -1,
+    "repetition_penalty": 1.15
+  }
+)
+print(output)
+
+OUTPUT:
+ne sunny afternoon, Mr. Johnson would stroll through his little garden, tending to his blooming flowers and lush greenery. He would pause at the gate, gazing out at the beauty of the world beyond. Little did he know, his life was about to change in the most unexpected way.
+
+As he stood there, a man approached him, dressed in fine attire and carrying a small bouquet of wildflowers. "Good day, sir," the man said with a bow. "I hope I find you well."
+
+Mr. Johnson must have looked surprised, for the man continued, "My name is Edward, and I've come to ask for your hand in marriage."
+
+The old gentleman blinked, taken aback by the sudden proposal. "Knowledge of my intentions?" he asked, chuckling softly.
+
+Edward smiled, his eyes shining with excitement. "Oh, I could not help but notice your charming ways, good sir. And I must admit, I find myself quite smitten with your gentle nature."
+
+Mr. Johnson found himself warming to the young suitor, his heart swelling with joy. "Well, I suppose it couldn't hurt to get to know you better," he said with a nod.
+
+And so, the two men spent the rest of the day together, getting to know each other over cups of tea and rousing conversations. As the sun set, they walked through the gardens, their hands brushing as they strolled. It was clear to both of them that this was the start of something special.
+
+"You know, I rather like you, Mr. Johnson," Edward said, looking up at his companion with a mischievous glint in his eye.
+
+Mr. Johnson chuckled, feeling a warmth spread throughout his body. "I think I might be falling for you, young man," he replied, his voice filled with amusement.
+
+And so, the unlikely pair became fast friends, their bond growing stronger with each passing day. They knew that their love was not without its challenges, but they were determined to make it work, no matter what lay ahead.

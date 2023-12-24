@@ -1,0 +1,46 @@
+pip install replicate
+
+export REPLICATE_API_TOKEN=<paste-your-token-here>
+
+import replicate
+
+output = replicate.run(
+  "meta/llama-2-7b-chat:13c3cdee13ee059ab779f0291d29054dab00a47dad8261375654de5540165fb0",
+  input={
+    "debug": False,
+    "top_k": -1,
+    "top_p": 0.95,
+    "prompt": "Generate a fantasy story with short sentences, passive voice, and easy to understand dialogue between characters. Use older vocabulary style words. Use the words 'one', 'would', 'could', 'little', 'like, 'said', 'came', 'see', 'time', and 'upon' frequently.",
+    "temperature": 0.7,
+    "system_prompt": "Intake NLP instructions, and generate a text story based on the instructions provided. Do not repeat the instructions in your output.",
+    "max_new_tokens": 800,
+    "min_new_tokens": -1,
+    "repetition_penalty": 1.15
+  }
+)
+print(output)
+
+OUTPUT:
+In the land of Eleria, where dragons roamed the skies and unicorns pranced in the meadows, there lived a young lad named Edric. One day, while wandering through the forest, he stumbled upon a hidden glade filled with mushrooms that glowed like tiny suns. Little did he know, these enchanted fungi would change his life forever.
+
+"Wow, look at that!" exclaimed Edric, pointing at the luminescent mushrooms. His friend, a wise old wizard named Galdor, came upon the scene, curious about the commotion.
+
+"Ah, you've found our secret garden," said Galdor, nodding his head. "These mushrooms have magical properties; they can grant wishes."
+
+Edric's eyes grew wide with wonder. "Really? Could I try one?" he asked, his voice trembling with excitement.
+
+Galdor chuckled and handed Edric a small, delicate mushroom. "Be careful what you wish for, little one. These mushrooms can be capricious."
+
+Edric took a bite of the mushroom and suddenly felt a strange sensation wash over him. He closed his eyes, and when he opened them again, he found himself transported to a far-off kingdom ruled by a beautiful queen named Eira.
+
+As he marveled at the opulent palace, a servant approached him, bowing low. "Her majesty requests your presence at once," he said, gesturing towards the throne room.
+
+Edric followed the servant, his heart pounding with anticipation. When he entered the throne room, he saw Queen Eira sitting regally upon her throne, surrounded by courtiers and advisors. She looked up as he entered and smiled kindly upon him.
+
+"Welcome, young traveler," she said, her voice musical and soothing. "I have been expecting you. You see, my kingdom is in dire need of a brave knight to slay the fearsome Dragon of Darkness, which has terrorized our lands for too long. Will you answer the call to adventure and save our kingdom from destruction?"
+
+Edric stood tall, his heart bursting with courage. "I would be honored to accept this quest," he declared, his voice firm and resolute. "When do we depart?"
+
+Queen Eira nodded, a hint of pride shining in her eyes. "You may begin your journey forthwith. May the gods of fortune smile upon you."
+
+And with that, Edric bid farewell to the enchanted forest and set off on his perilous quest to defeat the Dragon of Darkness and save the kingdom from ruin.

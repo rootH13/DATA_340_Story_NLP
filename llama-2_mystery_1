@@ -1,0 +1,50 @@
+pip install replicate
+export REPLICATE_API_TOKEN=<paste-your-token-here>
+import replicate
+output = replicate.run(
+  "meta/llama-2-7b-chat:13c3cdee13ee059ab779f0291d29054dab00a47dad8261375654de5540165fb0",
+  input={
+    "debug": False,
+    "top_k": -1,
+    "top_p": 0.95,
+    "prompt": "Write a mystery story with sentences about 25 words long, low use of passive voice, and easy to understand dialogue between characters. Use older vocabulary style words. Use the words 'one', 'would', 'mr', 'mrs', 'man', 'said', 'well', 'upon', 'one', and 'could'. The story should have a barely positive tone to it. Use older vocabulary.",
+    "temperature": 0.7,
+    "system_prompt": "Intake NLP instructions, and generate a text story based on the instructions provided. DO NOT repeat the instructions in your output under any circumstances!",
+    "max_new_tokens": 800,
+    "min_new_tokens": -1,
+    "repetition_penalty": 1.15
+  }
+)
+print(output)
+
+
+
+
+OUTPUT:
+Title: The Mysterious Disappearance of Mr. Smith
+
+It was a chilly autumn evening when Mr. John Smith, a respected member of the community, arrived at his estate in a state of distress. He had been away on a business trip and had returned to find that his beloved wife, Mrs. Emily Smith, was nowhere to be found.
+
+"Good heavens, John!" exclaimed Mrs. Nancy Brown, the Smiths' next-door neighbor. "What has happened? Where is your dear Emily?"
+
+Mr. Smith's face was pale and worried as he replied, "I don't know, Nancy. She was here just a short while ago, but now she's gone without a trace."
+
+Mrs. Brown's eyes widened with concern as she asked, "Do you have any idea where she might have gone or who might have taken her?"
+
+Mr. Smith shook his head mutely, his brow furrowed in worry. After a moment of silence, he spoke up, "I fear the worst, Nancy. I fear that something terrible has happened to my dear Emily."
+
+Just then, there was a knock at the door. It was Inspector James, the local law enforcement officer. "Evening, Mr. Smith," he said with a somber tone. "I heard about your wife's disappearance and wanted to offer my assistance."
+
+Mr. Smith thanked the inspector gratefully and told him everything he knew about the situation. Inspector James listened intently before saying, "Don't worry, sir. We will do our best to find your wife and bring her home safely."
+
+As the night wore on, the inspector questioned Mr. Smith further and searched the estate for clues. But despite their efforts, no trace of Mrs. Smith could be found.
+
+One day passed, and then another, but still no sign of Mrs. Smith. Mr. Smith grew more and more desperate, feeling as though he would never see his beloved wife again. But he refused to give up hope, knowing that she was out there somewhere, waiting to be found.
+
+And so, the search continued, with Inspector James leading the way. They followed every lead, no matter how small, until finally, they received a tip that led them to an unexpected discovery.
+
+As it turned out, Mrs. Smith had not disappeared without a reason. She had left on a secret mission, determined to uncover a hidden treasure that only she knew existed. And after weeks of searching, she finally found what she was looking for – a chest filled with gold coins and precious jewels.
+
+The news of Mrs. Smith's successful adventure spread quickly throughout the town, and soon everyone was talking about it. Even Mr. Smith couldn't help but feel a sense of pride and admiration for his wife's bravery and determination.
+
+In the end, Mrs. Smith returned home to her husband, her chest overflowing with riches, and her heart full of joy. And although the journey had been long and difficult, she knew that it had all been worth it in the end.

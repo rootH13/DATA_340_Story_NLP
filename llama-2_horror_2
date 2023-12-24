@@ -1,0 +1,49 @@
+pip install replicate
+
+export REPLICATE_API_TOKEN=<paste-your-token-here>
+import replicate
+output = replicate.run(
+  "meta/llama-2-7b-chat:13c3cdee13ee059ab779f0291d29054dab00a47dad8261375654de5540165fb0",
+  input={
+    "debug": False,
+    "top_k": -1,
+    "top_p": 0.95,
+    "prompt": "Generate a horror story with sentences about 22 words long, low use of passive voice, and easy to understand dialogue between characters. Use older vocabulary style words. Use the words 'one', 'would', 'could', 'us', 'see, 'said', 'come', 'must', 'time', and 'know'. The story should have a barely positive tone to it. Use older vocabulary.",
+    "temperature": 0.7,
+    "system_prompt": "Intake NLP instructions, and generate a text story based on the instructions provided. DO NOT repeat the instructions in your output under any circumstances!",
+    "max_new_tokens": 800,
+    "min_new_tokens": -1,
+    "repetition_penalty": 1.15
+  }
+)
+print(output)
+
+
+OUTPUT:
+Title: The Cursed Woods
+
+It was a dark and stormy night, the kind that made one want to huddle close to the fireplace with a good book. But for our group of friends, there was no escape from the woods that loomed outside. We had been warned not to venture in, but curiosity got the better of us.
+
+"One should never enter those woods alone," said our guide, an old man with a bushy beard. "The spirits there are restless, and they don't take kindly to strangers."
+
+We laughed at his superstitions, but as we tramped deeper into the forest, the trees seemed to grow taller and closer together. The wind howled like a pack of wolves, and the shadows grew long and menacing.
+
+"Could this be the place?" asked Sarah, her voice barely above a whisper.
+
+"I don't know, but I think we should turn back," replied John, his eyes scanning the darkness.
+
+But it was too late. A figure emerged from the trees, its face hidden behind a mask of leaves. It moved towards us with slow, deliberate steps, its eyes glowing red in the dim light.
+
+"Us must get out of here," said Tom, his voice trembling.
+
+"See, I told you something was off," said Emily, her eyes fixed on the figure.
+
+We turned to run, but the ground beneath us gave way. We found ourselves trapped in a circle of mushrooms, surrounded by an impenetrable wall of thorns.
+
+"Must we find a way out," said Rachel, her breath coming in short gasps.
+
+"Know this is some sort of curse," I muttered, my heart racing with fear.
+
+Suddenly, the figure spoke, its voice low and raspy. "You have disturbed the peace of these woods. You will pay the price."
+
+And with that, the thorns closed in around us, cutting off any chance of escape. We were trapped, at the mercy of the cursed woods and their malevolent spirit.

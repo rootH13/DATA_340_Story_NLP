@@ -1,0 +1,32 @@
+pip install replicate
+
+export REPLICATE_API_TOKEN=<paste-your-token-here>
+
+import replicate
+
+output = replicate.run(
+  "meta/llama-2-7b-chat:13c3cdee13ee059ab779f0291d29054dab00a47dad8261375654de5540165fb0",
+  input={
+    "debug": False,
+    "top_k": -1,
+    "top_p": 0.95,
+    "prompt": "Generate a fantasy story with short sentences, passive voice, and easy to understand dialogue between characters. Use older vocabulary style words. Use the words 'one', 'would', 'could', 'little', 'like, 'said', 'came', 'see', 'time', and 'upon'. The story should have a slightly positive tone to it.",
+    "temperature": 0.7,
+    "system_prompt": "Intake NLP instructions, and generate a text story based on the instructions provided. Do not repeat the instructions in your output.",
+    "max_new_tokens": 800,
+    "min_new_tokens": -1,
+    "repetition_penalty": 1.15
+  }
+)
+print(output)
+
+OUTPUT:
+One day, in a far-off kingdom, there lived a little prince named Timmy. He was a curious boy with big dreams and adventures to be had. One would think that living in a castle surrounded by rolling hills and sparkling streams would be enough to keep anyone happy, but not for Timmy. He wanted more. More adventure, more excitement, more magic. And so he set out into the world to find it.
+
+As he wandered through the forest, he came upon an old wise man sitting beneath a tall tree. The man looked up at Timmy and smiled kindly. "Ah, young one," he said, "I see you are seeking something beyond your tiny kingdom." Timmy nodded eagerly, his eyes shining with anticipation. "Yes, I want to see all the wonders of the world." The wise man chuckled and patted Timmy's head. "Well, my dear, you have come to the right place. For I can show you the secrets of the universe."
+
+Timmy couldn't believe his luck. He spent hours with the wise man, listening to tales of magical creatures and hidden realms. The old man spoke of dragons that breathed fire and water nymphs who swam in crystal clear rivers. He told stories of enchanted forests where trees bore fruit and flowers sang sweet melodies. Timmy could hardly contain his excitement as he listened to these fantastical accounts.
+
+But then, the wise man spoke of something even more remarkable. "Young one," he said, "you must see this for yourself. Come, I will take you to a land unlike any other. A land where magic flows like a river and creatures flit about like birds in the sky." Timmy's eyes grew wide with wonder. Could it be true? Was there really such a place? He asked the wise man how he might reach this mystical land. The old man smiled once more and said, "Just follow the path that winds up ahead. It will lead you straight to the heart of the magical realm."
+
+Without another word, Timmy set off along the winding trail. The sun began to dip below the horizon, casting a golden glow over the landscape. As he walked, the air grew thick with magic and the scent of blooming wildflowers filled his nostrils. Every step felt like he was walking closer to his dreams. Finally, after what seemed like an eternity, he reached the edge of a glittering lake. Across its still waters, a towering mountain rose, shrouded in mist. Timmy knew that he had found the entrance to the enchanted realm. With a deep breath, he stepped across the threshold and entered a world beyond his wildest imaginings.

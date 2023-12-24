@@ -1,0 +1,40 @@
+pip install replicate
+
+export REPLICATE_API_TOKEN=<paste-your-token-here>
+
+import replicate
+
+output = replicate.run(
+  "meta/llama-2-7b-chat:13c3cdee13ee059ab779f0291d29054dab00a47dad8261375654de5540165fb0",
+  input={
+    "debug": False,
+    "top_k": -1,
+    "top_p": 0.95,
+    "prompt": "Write a romance story with sentences about 32 words long, some use of passive voice, and easy to understand dialogue between characters. Use older vocabulary style words. Use the words 'one', 'would', 'mr', 'mrs', 'little', 'said', 'like', 'man', 'must', and 'know'. The story should have a slightly positive tone to it. Use older vocabulary. ",
+    "temperature": 0.7,
+    "system_prompt": "Intake NLP instructions, and generate a text story based on the instructions provided. DO NOT repeat the instructions in your output under any circumstances!",
+    "max_new_tokens": 800,
+    "min_new_tokens": -1,
+    "repetition_penalty": 1.15
+  }
+)
+print(output)
+
+OUTPUT:
+One fine spring morning, Mr. Smith was taking his daily stroll through the park when he spotted a lovely lady, Mrs. Jones, sitting on a bench reading a book. He couldn't help but be drawn to her beauty and grace, so he approached her with a smile.
+
+"Good morrow, my dear," he said with a bow of his head. "Might I join you?"
+
+Mrs. Jones looked up from her book and smiled at him. "Of course, sir," she replied. "Please do."
+
+The two of them struck up a conversation, discussing everything from the weather to their shared love of literature. As they talked, Mr. Smith found himself growing more and more enamored of Mrs. Jones. Her sparkling eyes and quick wit were like nothing he had ever encountered before.
+
+"You are quite the delightful conversationalist, madam," he said with a chuckle. "I must confess, I find myself in your debt for the pleasure of your company."
+
+Mrs. Jones blushed prettily at his words and leaned in closer to him. "And I must thank you for the compliment, sir," she said with a sly grin. "You are quite the charming gentleman yourself."
+
+As the sun began to set, Mr. Smith knew that it was time to bid Mrs. Jones farewell. But he promised to see her again soon, and left her with a little smile on his face.
+
+"Until we meet again, my dear," he said with a nod. "May our next encounter be even more enjoyable than this one."
+
+Mrs. Jones nodded in agreement and watched as Mr. Smith disappeared into the crowd. She couldn't help but feel a sense of excitement and anticipation about the possibility of seeing him again. For though their acquaintance was still in its infancy, she knew that she had found someone special. Someone who made her feel alive and appreciated in a way she never thought possible.

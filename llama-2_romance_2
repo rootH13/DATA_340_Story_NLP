@@ -21,7 +21,7 @@ output = replicate.run(
 print(output)
 
 OUTPUT:
-ne sunny afternoon, Mr. Johnson would stroll through his little garden, tending to his blooming flowers and lush greenery. He would pause at the gate, gazing out at the beauty of the world beyond. Little did he know, his life was about to change in the most unexpected way.
+One sunny afternoon, Mr. Johnson would stroll through his little garden, tending to his blooming flowers and lush greenery. He would pause at the gate, gazing out at the beauty of the world beyond. Little did he know, his life was about to change in the most unexpected way.
 
 As he stood there, a man approached him, dressed in fine attire and carrying a small bouquet of wildflowers. "Good day, sir," the man said with a bow. "I hope I find you well."
 

@@ -1,0 +1,65 @@
+import replicate
+
+output = replicate.run(
+  "meta/llama-2-7b-chat:13c3cdee13ee059ab779f0291d29054dab00a47dad8261375654de5540165fb0",
+  input={
+    "debug": False,
+    "top_k": -1,
+    "top_p": 0.95,
+    "prompt": "Generate a sci-fi story where the character interaction is mostly direct dialogue, sentiment subjectivity is low (0.48) and sentiment polarity is also low (0.14). Average sentence length is 25 words, with low amount of passive sentences. Use slightly outdated language with words like \"upon\".",
+    "temperature": 0.62,
+    "system_prompt": "Intake NLP instructions, and generate a text story based on the instructions provided. Do not repeat the instructions in your output.",
+    "max_new_tokens": 600,
+    "min_new_tokens": -1,
+    "repetition_penalty": 1.15
+  }
+)
+print(output)
+
+
+OUTPUT:
+Title: The Lost Colony of Zorvath
+
+Chapter 1 - Departure
+
+Commander Valtor stood upon the bridge of the interstellar vessel, Zorvath's Hope. "Prepare for departure, crew," he barked. "We must reach our new homeworld before the xenomorph infestation spreads."
+
+"Aye, Commander," replied Lieutenant Nyx, navigating through the ship's systems.
+
+Valtor glared at the viewscreen, displaying a swirling vortex of light and color. "I only wish we could escape this wretched galaxy."
+
+Nyx chuckled dryly. "Such sentiments are...unseemly, Commander."
+
+Chapter 2 - Encounter
+
+The ship hurtled towards an uncharted planet, shrouded in darkness. Suddenly, a strange energy beam pierced the hull, crippling critical systems.
+
+Valtor cursed under his breath. "What sorcery is this?"
+
+Nyx shook her head, her eyes fixed on the viewscreen. "I cannot discern its origin, Commander."
+
+A voice echoed from the speakers. "Greetings, inhabitants of Zorvath's Hope. We mean you no harm, but your presence here is...inconvenient."
+
+Valtor squinted at the screen. "Who dares address us thus? Identify yourself!"
+
+Chapter 3 - Conflict
+
+A group of beings materialized within the bridge. They wore strange attire, adorned with glowing symbols. One stepped forward, offering a hand in peace.
+
+Lieutenant Fusek eyed the stranger warily. "And what business do you have here?"
+
+The being smiled. "We seek to protect your kind from the impending doom that threatens all life in this galaxy."
+
+Valtor crossed his arms, suspicious. "How can we trust your words?"
+
+The being bowed. "You may not, but know this: we share your desire to find a habitable world. Together, we can achieve that goal."
+
+Chapter 4 - Decision
+
+Hours passed as the Zorvathians deliberated among themselves. Valtor leaned against a console, lost in thought. "This offers hope, yet I fear their intentions..."
+
+Nyx nodded in agreement. "Yes, Commander. But consider: if they truly possess the knowledge we need, perhaps allying ourselves might be wise."
+
+Fusek spoke up. "I say we take the chance. Our survival depends on it."
+
+Valtor straightened, determination etched on his (ends here)

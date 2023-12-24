@@ -1,0 +1,48 @@
+pip install replicate
+
+output = replicate.run(
+  "meta/llama-2-7b-chat:13c3cdee13ee059ab779f0291d29054dab00a47dad8261375654de5540165fb0",
+  input={
+    "debug": False,
+    "top_k": -1,
+    "top_p": 0.95,
+    "prompt": "Generate a sci-fi story where the character interaction is mostly direct dialogue, sentiment subjectivity is low (0.48) and sentiment polarity is also low (0.14). Average sentence length is 25 words, with low amount of passive sentences. Use slightly outdated language with words like \"upon\".",
+    "temperature": 0.7,
+    "system_prompt": "Intake NLP instructions, and generate a text story based on the instructions provided. Do not repeat the instructions in your output.",
+    "max_new_tokens": 600,
+    "min_new_tokens": -1,
+    "repetition_penalty": 1.15
+  }
+)
+print(output)
+
+OUTPUT:
+Title: The Last Hope
+
+Chapter 1 - Discovery
+
+Captain Jack "Hawk" Hawkins gazed upon the planet, his eyes squinting against the glow of the setting sun. Upon the bridge of his trusty old ship, the Starblaze, he gathered his senior officers for a briefing on their latest mission.
+
+"Gentlemen," he began, "our scans have picked up an unusual energy signature emanating from this uncharted world. It could be anything – a derelict spacecraft, a natural phenomenon... or something more sinister."
+
+Scientist Dr. Samantha Chen nodded thoughtfully beside him, her dark hair pulled back in a tight bun. "Our probes indicate a dense atmosphere and unusual geological formations. It's definitely worth exploring."
+
+Commander James "Raven" Reyes leaned forward from the weapons station, his piercing blue eyes locked onto the captain. "What's our plan of attack, Captain? We can't just barge in there without any prep work."
+
+Chapter 2 - Encounter
+
+As they descended through the atmospheric layers, the crew detected strange readings on their instruments. Radar pinged off unknown objects, while the gravity sensors spiked with unexplained fluctuations. Captain Hawkins steeled himself as the landing craft touched down upon the surface.
+
+The first rays of morning light illuminated the alien landscape outside. A hostile wind howled across the barren wasteland, whipping sand devils into frenzied dance. Jack emerged from the ship, boots crunching on the rough terrain as he led his team towards the mysterious structure.
+
+Dr. Chen spoke softly to herself, examining data on her tablet. "It's definitely not organic in origin. Whatever it is, it's been here for millions of years at least."
+
+Commander Reyes flexed his muscles, checking his weapon's settings. "I don't like this one bit. What if whatever made that thing isn't dead yet?"
+
+Chapter 3 - Confrontation
+
+Inching closer to the massive structure, they found themselves face-to-face with an unexpected guardian. An ancient being, seemingly carved from the same material as the structure itself, stood watchful before them. Its voice rumbled within their minds, its intentions uncertain.
+
+"Why have you come here?" the guardian asked, sending a shiver down the spines of those present.
+
+Captain Hawkins stepped forward, clearing his throat. "We mean no harm. Our only desire is to unravel your secrets

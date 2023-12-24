@@ -1,0 +1,41 @@
+pip install replicate
+export REPLICATE_API_TOKEN=<paste-your-token-here>
+
+import replicate
+
+output = replicate.run(
+  "meta/llama-2-7b-chat:13c3cdee13ee059ab779f0291d29054dab00a47dad8261375654de5540165fb0",
+  input={
+    "debug": False,
+    "top_k": -1,
+    "top_p": 0.95,
+    "prompt": "Write a mystery story with sentences about 25 words long, low use of passive voice, and easy to understand dialogue between characters. Use older vocabulary style words. Use the words 'one', 'would', 'mr', 'mrs', 'man', 'said', 'well', 'upon', 'one', and 'could'. The story should have a barely positive tone to it. Use older vocabulary. Theme can be either murder or theft.",
+    "temperature": 0.7,
+    "system_prompt": "Intake NLP instructions, and generate a text story based on the instructions provided. DO NOT repeat the instructions in your output under any circumstances!",
+    "max_new_tokens": 800,
+    "min_new_tokens": -1,
+    "repetition_penalty": 1.15
+  }
+)
+print(output)
+
+OUTPUT:
+Title: The Mysterious Disappearance of the Family Heirloom
+
+One dark and stormy night, Mr. and Mrs. Smith sat in their cozy study, deep in conversation about their recently stolen family heirloom, a priceless diamond necklace that had been passed down for generations.
+
+"Well, I can't believe someone would do this to us," Mrs. Smith said, her voice trembling with anger.
+
+"It's unfortunate, my dear," Mr. Smith replied, his brow furrowed in concern. "But we must not let this theft get the best of us."
+
+Just then, there was a knock at the door. Mrs. Smith got up to answer it, expecting it to be the local police officer with whom she had made arrangements to report the crime. But upon opening the door, she found herself face to face with an unexpected visitor - a tall, slender man with piercing blue eyes and a mischievous grin.
+
+"Can I help you?" Mrs. Smith asked, trying to hide her unease.
+
+"Oh, good evening, Mrs. Smith," the stranger replied, tipping his hat. "My name is Jack, and I might have some information regarding your missing necklace."
+
+Mrs. Smith's curiosity piqued, she invited Jack inside to discuss further. As they chatted, Jack revealed himself to be a skilled detective who had been tracking the thief for weeks.
+
+"I think I know where your necklace might be," Jack said, his eyes sparkling with excitement. "Would you like me to take a look around?"
+
+Mr. Smith nodded eagerly, hoping against hope that they might soon recover their beloved family heirloom. And so, Jack set off on his mission to solve the mystery of the disappearing necklace. Little did anyone realize, Jack was about to uncover more than just the location of the stolen jewels...

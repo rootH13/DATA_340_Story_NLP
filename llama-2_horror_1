@@ -1,0 +1,30 @@
+pip install replicate
+
+export REPLICATE_API_TOKEN=<paste-your-token-here>
+
+import replicate
+
+output = replicate.run(
+  "meta/llama-2-7b-chat:13c3cdee13ee059ab779f0291d29054dab00a47dad8261375654de5540165fb0",
+  input={
+    "debug": False,
+    "top_k": -1,
+    "top_p": 0.95,
+    "prompt": "Generate a horror story with sentences about 22 words long, low use of passive voice, and easy to understand dialogue between characters. Use older vocabulary style words. Use the words 'one', 'would', 'could', 'us', 'see, 'said', 'come', 'must', 'time', and 'know'. The story should have a barely positive tone to it. Use older vocabulary.",
+    "temperature": 0.7,
+    "system_prompt": "Intake NLP instructions, and generate a text story based on the instructions provided. Do not repeat the instructions in your output under any circumstances!",
+    "max_new_tokens": 800,
+    "min_new_tokens": -1,
+    "repetition_penalty": 1.15
+  }
+)
+print(output)
+
+OUTPUT:
+ne dark and stormy night, us kids would gather 'round the fireplace, listenin' to our pa tell tales of ghosts and monsters that lurked in the shadows. He would say, "Boys, I reckon it's time for you to know the truth," and we'd sit on the edge of our seats, our eyes wide with wonder.
+
+"You see, back in my day, there was this one fella named Old Man Johnson. He lived out in the woods, all alone, and folks said he was cursed. They claimed he could control the elements, summoning storms and conjurin' up demons from the depths of hell."
+
+Our voices would tremble as we asked, "Is it true, Pa? Is he real?" Our father would nod gravely, his face set in a serious expression, and say, "I wouldn't go near him if I were you. He's not someone you want to mess with."
+
+As we drifted off to sleep that night, we couldn't shake the feeling that something was watching us, waiting for its chance to strike. And when we woke up the next mornin', the sky was filled with thick, gray clouds, and the wind howled like a pack of wolves. It was then that we knew Old Man Johnson had come for us.

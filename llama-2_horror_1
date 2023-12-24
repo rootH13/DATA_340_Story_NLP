@@ -21,7 +21,7 @@ output = replicate.run(
 print(output)
 
 OUTPUT:
-ne dark and stormy night, us kids would gather 'round the fireplace, listenin' to our pa tell tales of ghosts and monsters that lurked in the shadows. He would say, "Boys, I reckon it's time for you to know the truth," and we'd sit on the edge of our seats, our eyes wide with wonder.
+One dark and stormy night, us kids would gather 'round the fireplace, listenin' to our pa tell tales of ghosts and monsters that lurked in the shadows. He would say, "Boys, I reckon it's time for you to know the truth," and we'd sit on the edge of our seats, our eyes wide with wonder.
 
 "You see, back in my day, there was this one fella named Old Man Johnson. He lived out in the woods, all alone, and folks said he was cursed. They claimed he could control the elements, summoning storms and conjurin' up demons from the depths of hell."
 
